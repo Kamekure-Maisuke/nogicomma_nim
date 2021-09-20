@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  nogicomma_nim:
+    build:
+      context: .
+    image: nogicomma_nim
+    restart: always
+    tty: true
+    volumes:
+      - .:/usr/local/src/nogicomma_nim
